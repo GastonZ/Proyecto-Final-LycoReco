@@ -27,9 +27,13 @@ const navbar = document.querySelector('.nav-main');
 const tabContent = document.querySelector('.tab-content');
 const tabs = document.querySelector('.tabs');
 
+
 const button = document.querySelector('.button');
 const button2 = document.querySelector('.button2');
 const button3 = document.querySelector('.button3');
+
+const footer = document.querySelector('.footer');
+const footerIcon = document.querySelector('.link-footer')
 
 btnSwitch.addEventListener('click', () => {
     btnSwitch.classList.toggle('active');
@@ -45,6 +49,9 @@ btnSwitch.addEventListener('click', () => {
     button2.classList.toggle('dark')
     button3.classList.toggle('dark')
     tabs.classList.toggle('dark')
+    footer.classList.toggle('dark')
+    footerIcon.classList.toggle('dark')
+
 })
 
 /* TRIPLE TAB SECTION */
