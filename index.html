@@ -4,107 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4a6cf95f22.js" crossorigin="anonymous"></script>
     <title>Lycoris Website</title>
+    <script defer src="lycoris.js"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4a6cf95f22.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav-main">
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <div class="navbar-content">
-            <h2 class="title">Lycoris Recoil</h2>
-            <button class="switch" id="switch">
-                <span><img class="light-icon" src="imagenes/chisato-icon.png" alt="Chisatito"></span>
-                <span><img class="dark-icon" src="imagenes/takina-icon.png" alt="Takinita"></span>
-            </button>
-            <ul class="nav-links">
-                <li class="links"><a href="">Organization</a></li>
-                <li class="links"><a href="">World News</a></li>
-                <li class="links"><a href="">Lyco-Shop</a></li>
-        </ul> 
-        </div>
-    </nav>    
-        <section class="landing">
-            <div class="text">
-                <h2 class="world">saving the <strong>World</strong> <br> without you noticing</h2>
-                <button class="btn">Know More</button>
+    <main id="swup" class="transition-fade">
+        <nav class="nav-main">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <div class="waifus">
-                <img class="image show" id="chisato" src="imagenes/Chisato-desktop.png" alt="">
+            <div class="navbar-content">
+                <h2 class="title"><a href="/index.html">Lycoris Recoil</a></h2>
+                <button class="switch" id="switch">
+                    <span><img class="light-icon" src="imagenes/chisato-icon.png" alt="Chisatito"></span>
+                    <span><img class="dark-icon" src="imagenes/takina-icon.png" alt="Takinita"></span>
+                </button>
+                <ul class="nav-links">
+                    <li class="links"><a href="/org.html">Organization</a></li>
+                    <li class="links"><a href="/world.html">World News</a></li>
+                    <li class="links"><a href="/shop.html">Lyco-Shop</a></li>
+            </ul> 
             </div>
-            <div class="waifus">
-                <img class="image" id="takina" src="imagenes/takina-desktop.png" alt="">
-            </div>
-        </section>
-        <section class="tabs">
-            <div class="container">
-                <div id="tab-1" class="tab-item tab-border">
-                    <i class="fa-solid fa-gun fa-3x"></i>
-                    <p class="hide-sm"></p>
+        </nav>    
+            <section class="landing">
+                <div class="text">
+                    <h2 class="world">saving the <strong>World</strong> <br> without you noticing</h2>
+                    <button class="btn">Know More</button>
                 </div>
-                <div id="tab-3" class="tab-item">
-                    <i class="fa-solid fa-store fa-3x"></i>
-                    <p class="hide-sm"></p>
+                <div class="waifus">
+                    <img class="image show" id="chisato" src="imagenes/Chisato-desktop.png" alt="">
                 </div>
-                <div id="tab-2" class="tab-item">
-                    <i class="fa-solid fa-newspaper fa-3x"></i>
-                    <p class="hide-sm"></p>
+                <div class="waifus">
+                    <img class="image" id="takina" src="imagenes/takina-desktop.png" alt="">
                 </div>
-            </div>
-        </section>
-        <section class="tab-content">
-            <div class="container">
-                <!-- Tab content 1 -->
-               <div id="tab-1-content" class="tab-content-item show-tab">
-                    <div class="tab-1-content-inner">
-                        <div>
-                            <p class="text-lg">
-                                The lycoris are agents that work around the globe maintaining
-                                 world peace.
-                            </p>
-                            <a href="#" class="button">Learn More</a>
-                        </div>
-                        <img src="imagenes/lycoris-org.png" alt="Lycoris organization">
+            </section>
+            <section class="tabs">
+                <div class="container">
+                    <div id="tab-1" class="tab-item tab-border">
+                        <i class="fa-solid fa-gun fa-3x"></i>
+                        <p class="hide-sm"></p>
+                    </div>
+                    <div id="tab-3" class="tab-item">
+                        <i class="fa-solid fa-store fa-3x"></i>
+                        <p class="hide-sm"></p>
+                    </div>
+                    <div id="tab-2" class="tab-item">
+                        <i class="fa-solid fa-newspaper fa-3x"></i>
+                        <p class="hide-sm"></p>
                     </div>
                 </div>
-
-                <!-- Tab content 2 -->
-               <div id="tab-2-content" class="tab-content-item">
-                    <div class="tab-2-content-top">
-                        <p class="text-lg">
-                            We may not tell you where we get involved but there we are.
-                        </p>
-                        <a href="#" class="button button2">World news</a>
-                    </div>
-                    <div class="tab-2-content-bottom">
-                        <img src="imagenes/Lycoris-news.jpg" alt="las Lycoris estan viendo">
-                    </div>
-                </div>
-
-                <!-- Tab content 3 -->
-                <div id="tab-3-content" class="tab-content-item">
-                    <div class="tab-3-content-inner">
-                        <img src="imagenes/Lyco-guns.png" alt="Takina atacando criminales">
-                        <div class="tab-content-3">
-                            <p class="text-lg">
-                                Everything a lycoris needs to continue to maintain world peace
-                            </p>
-                            <a href="#" class="button button3">Lyco-Shop</a>
+            </section>
+            <section class="tab-content">
+                <div class="container">
+                    <!-- Tab content 1 -->
+                <div id="tab-1-content" class="tab-content-item show-tab">
+                        <div class="tab-1-content-inner">
+                            <div>
+                                <p class="text-lg">
+                                    The lycoris are agents that work around the globe maintaining
+                                    world peace.
+                                </p>
+                                <a href="#" class="button">Learn More</a>
+                            </div>
+                            <img src="imagenes/lycoris-org.png" alt="Lycoris organization">
                         </div>
                     </div>
+
+                    <!-- Tab content 2 -->
+                <div id="tab-2-content" class="tab-content-item">
+                        <div class="tab-2-content-top">
+                            <p class="text-lg">
+                                We may not tell you where we get involved but there we are.
+                            </p>
+                            <a href="#" class="button button2">World news</a>
+                        </div>
+                        <div class="tab-2-content-bottom">
+                            <img src="imagenes/Lycoris-news.jpg" alt="las Lycoris estan viendo">
+                        </div>
+                    </div>
+
+                    <!-- Tab content 3 -->
+                    <div id="tab-3-content" class="tab-content-item">
+                        <div class="tab-3-content-inner">
+                            <img src="imagenes/Lyco-guns.png" alt="Takina atacando criminales">
+                            <div class="tab-content-3">
+                                <p class="text-lg">
+                                    Everything a lycoris needs to continue to maintain world peace
+                                </p>
+                                <a href="#" class="button button3">Lyco-Shop</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div>
-                <i class="link-footer fa-brands fa-youtube"></i>
-            </div>
-        </footer>
-    <script src="lycoris.js"></script>
+            </section>
+            <footer class="footer">
+                <div>
+                    <i class="link-footer fa-brands fa-youtube"></i>
+                </div>
+            </footer>  
+    </main>
+    <script defer src="lycoris.js"></script>
 </body>
 </html>

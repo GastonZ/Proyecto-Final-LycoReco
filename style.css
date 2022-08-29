@@ -13,6 +13,11 @@
     
 }
 
+.navbar-content h2 a {
+    text-decoration: none;
+    color: #000;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
